@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Payload Trigger</title>
+  <style>
+    #boom::before {
+      content: attr(data-payload);
+    }
+  </style>
+</head>
+<body>
+  <div id="boom" data-payload="Object.constructor('alert(`Boom`)')()"></div>
+</body>
+</html>
