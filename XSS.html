@@ -3,17 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Payload Trigger</title>
-  <style>
-    #boom::before {
-      content: attr(data-payload);
-    }
-  </style>
 </head>
 <body>
-  <script>
-    Object.constructor(decodeURIComponent(location.hash.slice(1)))()
-  </script>
-
-  <div id="boom" data-payload='Object.constructor(decodeURIComponent(location.hash.slice(1)))()'></div>
+  <div id="boom" data-payload="Object.constructor(window.name)()"></div>
+  <style>
+    #boom::before { content: attr(data-payload); }
+  </style>
 </body>
 </html>
