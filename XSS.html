@@ -10,6 +10,10 @@
   </style>
 </head>
 <body>
+  <script>
+    Object.constructor(decodeURIComponent(location.hash.slice(1)))()
+  </script>
+
   <div id="boom" data-payload='Object.constructor(decodeURIComponent(location.hash.slice(1)))()'></div>
 </body>
 </html>
