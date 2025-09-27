@@ -1,2 +1,5 @@
 # Trapnatized.github.io
-A static site for testing.... 
+<div id="boom" data-payload="Object.constructor('alert(`Boom`)')()"></div>
+<style>
+  #boom::before { content: attr(data-payload); }
+</style>
